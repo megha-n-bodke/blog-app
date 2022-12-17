@@ -1,2 +1,24 @@
-<h1>Posts#show</h1>
+<h1>Post</h1>
+
+<div class = "row pl-3 border border-2 border-dark bg-secondary">
+<div class = "col-md-4">
+<p>Post#:&nbsp<%=@post.id%>&nbspBy: <%=@user.name%></p>
+</div>
+<div class = "col-md-4">
+</div>
+<div class = "col-md-4">
+<p>Comment:<%=@post.comments_counter%> &nbsp Likes_counter: &nbsp<%=@post.likes_counter%> </p>
+</div>
+<div>
+<p>Title: <%=@post.text%></p>
+</div>
+</div>
+
+<div class = "row border border-2 border-dark">
+<p>
+ <% @comments.each do |comment| %>
+              <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
+            <% end %>
+</p>
+</div>
 

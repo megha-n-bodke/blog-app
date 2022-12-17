@@ -1,2 +1,15 @@
 <h1>Here is list of users</h1>
+<% @users.each do |user| %>
+<%= link_to user_path(id: user.id), class:'nav-link' do%>
+   <div class = "row ml-3 bg-secondary border border-dark mb-4 ">
+    <div class = "col-md-3">
+     <img src = "<%= user.photo %>" class = "ml-3 w-50" alt="profile">
+    </div>
+    <div class = "col-md-8 pl-3">
+     <p><%= user.name %></p>
+    <p>Posts-Counter: <%= user.posts_counter%></p>
+    </div>
+    </div>
+     <% end %>
+<% end %>
 

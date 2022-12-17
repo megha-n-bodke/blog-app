@@ -1,2 +1,44 @@
 <h1>Here is a list of posts for a given user</h1>
+<hr>
+
+ <div class = "row ml-3 mb-4 ">
+    <div class = "col-md-3">
+     <img src = "<%= @user.photo %>" class = "ml-3 w-50" alt="profile">
+    </div>
+
+    <div class = "col-md-1"></div>
+
+    <div class = "col-md-8 pl-3">
+     <p><%= @user.name %> &nbsp Number of posts:<%=@user.posts_counter%></p>
+    </div>
+    </div>
+    </div>
+
+    <div class = "row">
+    <div class = "row">
+    <% @posts.each do |post| %>
+    <%= link_to user_post_path(id: post.id), class:'nav-link' do%>
+    <div class = "container-fluid mx-2 my-2 bg-secondary">
+    <p>
+    Post Id#:<%=post.id%><br>
+    Post Text: <%=post.text%>
+    <%=post.comments_counter%>
+    <%=post.likes_counter%>
+    </p>
+    </div>
+    <% end %>
+    </div>
+    </div>
+    
+    <div class = "row mb-2 ">
+    <% post.recent_comment.each do |comment| %>
+              <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
+            <% end %>
+            <%end%>
+    
+    </div>
+    </div>
+    
+
+
 
