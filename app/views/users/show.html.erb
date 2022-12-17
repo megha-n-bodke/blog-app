@@ -1,20 +1,37 @@
-<h1>List of users by Id</h1>
+<h1> User by Id</h1>
 
 
 <div class = 'row'>
 <div class = "col-md-3">
-     <img src = "<%= @user.photo %>" class = "ml-3" alt="profile">
+     <img src = "<%= @user.photo %>" class = "ml-3 w-50" alt="profile">
 </div>
 <div class = "col-md-8">
 <%=@user.name%>
+<p>Number of posts:</p>
 <%=@user.posts_counter%>
 </div>
 
-<div class = "row">
+<div class = "row border border-2 border-dark mt-2 mb-2">
 <%=@user.bio%>
 </div>
 
 <div>
-
+  <% @user.recent_posts.each do |post| %>
+<div class = "container-fluid mx-2 my-2">
+  <div class = "row bg-secondary my-5">
+      <%= link_to user_post_url(user_id:@user.id, id: post.id), class:'nav-link' do%>
+      <p>ID: <%=post.id%>
+      Title:<%=post.title%></P>
+      <p>Text: <%=post.text%></p>
+      <p>Comments_counter: <%=post.comments_counter%></p>
+      <p>Likes_counter<%=post.likes_counter%></p>
+        <% end %>
+    <% end %>
+    </div>
+</div>
+</div>
+<div>
+  <%= link_to "Show all Posts", user_posts_path(user_id: @user.id), class:"btn btn-primary mb-3" %>
+  </div>
 </div>
 
