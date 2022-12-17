@@ -15,7 +15,7 @@
 </div>
 
 <%= form_with url: "/users/#{@post.author.id}/posts/#{@post.id}/likes" ,class: "col-6" do |form|%>
- <%= form.submit "like", class: "col-3"%>
+ <%= form.submit "like", class: "col-3 my-3"%>
   <% end %> 
 <div class = "row border border-2 border-dark">
 <p>
@@ -23,5 +23,6 @@
               <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
             <% end %>
 </p>
+  <%= link_to "Add New Comment", new_user_post_comment_path(user_id: @user.id, post_id: @post.id), class:"btn btn-primary w-25" %>
 </div>
 
