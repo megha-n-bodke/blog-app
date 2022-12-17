@@ -1,0 +1,10 @@
+<div>
+<h1>Add new post</h1>
+<%= form_with model: @post, url: user_posts_path do |form|%>
+<div>
+<%= form.text_field :title, placeholder:"Enter post title", class:"form-control w-25 "%>
+<%= form.text_field :text, placeholder:"Enter text", class:"form-control w-25"%>
+<%= form.submit "Add Post", class:"btn btn-primary w-25", data:{turbo:false}%>
+</div>
+<%end%>
+</div>

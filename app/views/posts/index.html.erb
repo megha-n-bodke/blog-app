@@ -13,6 +13,9 @@
     </div>
     </div>
     </div>
+    <div>
+    <%= link_to "Add New Post", new_user_post_path(user_id: @user.id), class:"btn btn-primary my-3" %>
+    </div>
 
     <div class = "row">
     <div class = "row">
@@ -21,9 +24,9 @@
     <div class = "container-fluid mx-2 my-2 bg-secondary">
     <p>
     Post Id#:<%=post.id%><br>
-    Post Text: <%=post.text%>
-    <%=post.comments_counter%>
-    <%=post.likes_counter%>
+    Post Text: <%=post.text%><br>
+    Comment_counter:<%=post.comments_counter%><br>
+    Likes_counter:<%=post.likes_counter%>
     </p>
     </div>
     <% end %>
