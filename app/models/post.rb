@@ -13,6 +13,6 @@ class Post < ApplicationRecord
   end
 
   def recent_comment
-    comments.order(created_at: :desc).limit(3)
+    comments.order(created_at: :desc).includes(:author).limit(3)
   end
 end
