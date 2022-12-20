@@ -19,7 +19,7 @@
   <% end %> 
 <div class = "row border border-2 border-dark">
 <p>
- <% @comments.each do |comment| %>
+ <% @comments.includes(:author).each do |comment| %>
               <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
             <% end %>
 </p>
