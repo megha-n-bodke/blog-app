@@ -45,7 +45,6 @@ After you're finished please remove all the comments and instructions!
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors]
-
 - [🔭 Future Features ](#-future-features-)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -135,7 +134,7 @@ To run tests, run the following command:
 - GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
 - LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
 
-**Author2**
+👤 **Author2**
 
 - GitHub: [@muskan-gupta](https://github.com/muskan2532150/)
 - LinkedIn: [Muskan Gupta](https://www.linkedin.com/feed/)
