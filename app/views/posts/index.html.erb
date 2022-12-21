@@ -34,7 +34,7 @@
     </div>
     
     <div class = "row mb-2 ">
-    <% post.recent_comment.each do |comment| %>
+    <% post.recent_comment.includes(:author).each do |comment| %>
               <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
             <% end %>
             <%end%>
