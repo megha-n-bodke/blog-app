@@ -27,8 +27,8 @@ RSpec.describe User, type: :system do
 
     it "when i click on a user's name, it redirects me to that user's profile page." do
       User.delete_all
-       User.create(name: 'John', posts_counter: 30, photo: 'https://randomuser.me/api/port',
-                         bio: 'Teacher from Poland.')
+      User.create(name: 'John', posts_counter: 30, photo: 'https://randomuser.me/api/port',
+                  bio: 'Teacher from Poland.')
       visit users_path
     end
   end
