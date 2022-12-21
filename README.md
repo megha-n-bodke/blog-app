@@ -56,12 +56,12 @@ After you're finished please remove all the comments and instructions!
 
 **Author2**
 
-- GitHub: [@muskan-gupta] (https://github.com/muskan2532150/)
+- GitHub: [@muskan-gupta](https://github.com/muskan2532150/)
 - LinkedIn: [Muskan Gupta](https://www.linkedin.com/feed/)
 
 - [🔭 Future Features](#future-features)
-- User Authentication
-- CRUD Operations
+  - User Authentication
+  - CRUD Operations
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
