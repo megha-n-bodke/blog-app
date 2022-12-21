@@ -64,7 +64,20 @@ RSpec.describe User, type: :system do
             page.has_button?('Show all Posts')
         end
 
-       
+       it "When I click a user's post, it redirects me to that post's show page." do
+            post = Post.create(author: subject, title: 'First Post', text: 'My first post')
+            visit user_path(subject.id)
+            click_on 'My first post'
+            visit user_post_path(subject.id, post.id)
+            page.has_content?(post.title)
+        end
+        it "When I click to see all posts, it redirects me to the user's post's index page." do
+            visit user_path(subject.id)
+            click_on 'Show all Posts'
+            visit user_posts_path(subject.id)
+            page.has_content?('John')
+        end
+
     end
 end
 
