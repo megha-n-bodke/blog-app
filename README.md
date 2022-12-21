@@ -49,19 +49,8 @@ After you're finished please remove all the comments and instructions!
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors]
-  👤 **Author1**
 
-- GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
-- LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
-
-**Author2**
-
-- GitHub: [@muskan-gupta](https://github.com/muskan2532150/)
-- LinkedIn: [Muskan Gupta](https://www.linkedin.com/feed/)
-
-- [🔭 Future Features](#future-features)
-  - User Authentication
-  - CRUD Operations
+- [🔭 Future Features ](#-future-features-)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -142,6 +131,16 @@ To run tests, run the following command:
 
 - GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
 - LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
+
+**Author2**
+
+- GitHub: [@muskan-gupta](https://github.com/muskan2532150/)
+- LinkedIn: [Muskan Gupta](https://www.linkedin.com/feed/)
+
+## 🔭 Future Features
+
+- User Authentication
+- CRUD Operations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
