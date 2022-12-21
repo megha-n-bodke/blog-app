@@ -16,10 +16,23 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.author_id = Current.user.id
+    @post.author_id = current_user.id
 
     if @post.save
-      redirect_to "/users/#{Current.user.id}/posts"
+      redirect_to "/users/#{current_user.id}/posts"
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.comments.destroy_all
+    @post.likes.destroy_all
+    @post.destroy
+
+    if @post.destroy
+      redirect_to user_posts_path(current_user.id)
     else
       render :new
     end
