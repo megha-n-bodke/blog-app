@@ -35,10 +35,6 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
   - [Key Features](#key-features)
-    - Login Functionality
-    - Post an articles
-    - Comment a post
-    - Like a post
   - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
@@ -66,6 +62,13 @@ The Blog app will be a classic example of a blog website. You will create a full
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🛠 Key Features <a name="key-features">Key Features</a>
+
+- Login Functionality
+- Post an articles
+- Comment a post
+- Like a post
 
 <!-- GETTING STARTED -->
 
