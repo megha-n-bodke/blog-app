@@ -66,10 +66,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'bullet'
-<<<<<<< HEAD
   gem 'letter_opener'
-=======
->>>>>>> 5cecd81ded302b2edcd50ffbd1484b4dec99819b
   gem 'web-console'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
