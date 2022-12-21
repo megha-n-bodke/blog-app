@@ -34,12 +34,12 @@ After you're finished please remove all the comments and instructions!
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-      - Login Functionality
-      - Post an articles
-      - Comment a post
-      - Like a post
+  - [Key Features](#key-features)
+    - Login Functionality
+    - Post an articles
+    - Comment a post
+    - Like a post
+  - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -48,7 +48,17 @@ After you're finished please remove all the comments and instructions!
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
+- [👥 Authors]
+  👤 **Author1**
+
+- GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
+- LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
+
+**Author2**
+
+- GitHub: [@muskan-gupta] (https://github.com/muskan2532150/)
+- LinkedIn: [Muskan Gupta](https://www.linkedin.com/feed/)
+
 - [🔭 Future Features](#future-features)
 - User Authentication
 - CRUD Operations
