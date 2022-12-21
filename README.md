@@ -34,8 +34,8 @@ After you're finished please remove all the comments and instructions!
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+  - [Key Features](#key-features)
+  - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -44,8 +44,8 @@ After you're finished please remove all the comments and instructions!
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
+- [👥 Authors]
+- [🔭 Future Features ](#-future-features-)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -61,6 +61,13 @@ The Blog app will be a classic example of a blog website. You will create a full
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🛠 Key Features <a name="key-features">Key Features</a>
+
+- Login Functionality
+- Post an articles
+- Comment a post
+- Like a post
 
 <!-- GETTING STARTED -->
 
@@ -126,6 +133,16 @@ To run tests, run the following command:
 
 - GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
 - LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
+
+👤 **Author2**
+
+- GitHub: [@muskan-gupta](https://github.com/muskan2532150/)
+- LinkedIn: [Muskan Gupta](https://www.linkedin.com/feed/)
+
+## 🔭 Future Features
+
+- User Authentication
+- CRUD Operations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
