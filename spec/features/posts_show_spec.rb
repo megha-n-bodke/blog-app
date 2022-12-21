@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :system do
-     user = User.create(name: 'John', posts_counter: 30, photo: 'https://randomuser.me/api/portraits/men/70.jpg',
+  user = User.create(name: 'John', posts_counter: 30, photo: 'https://randomuser.me/api/portraits/men/70.jpg',
                      bio: 'Teacher from Poland.')
 
   subject do
     Post.new(author_id: user.id, title: 'First Post', text: 'My first post', comments_counter: 20, likes_counter: 30)
   end
   before { subject.save }
-describe 'show page' do
+  describe 'show page' do
     it "I can see a post's title." do
       visit user_post_path(user.id, subject.id)
       page.has_content?(subject.title)
