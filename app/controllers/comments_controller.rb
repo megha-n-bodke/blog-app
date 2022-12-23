@@ -7,9 +7,20 @@ class CommentsController < ApplicationController
     @current_post = Post.find(params[:post_id])
     @comments = @current_post.comments.new(comment_params)
     @comments.post_id = @current_post.id
-    @comments.author_id = Current.user.id
+    @comments.author_id = current_user.id
     if @comments.save
       redirect_to "/users/#{@current_post.author.id}/posts/#{@current_post.id}"
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @current_post = Post.find(params[:post_id])
+    @current_comment = @current_post.comments.find(params[:id])
+    @current_comment.destroy
+    if @current_comment.destroy
+      redirect_to user_post_path(@current_post.author_id, @current_post.id)
     else
       render :new
     end
