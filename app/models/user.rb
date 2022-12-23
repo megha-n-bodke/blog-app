@@ -19,6 +19,7 @@ class User < ApplicationRecord
 
   private
 
+  # rubocop:disable all
   def jwt_payload
     super
   end
