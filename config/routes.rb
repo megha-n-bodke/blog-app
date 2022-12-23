@@ -7,6 +7,13 @@ resources :users do
     resources :likes 
     resources :comments 
   end 
-end  
+end 
+namespace :api do
+  resources :users, only: [] do
+    resources :posts, only: [:index] do
+      resources :comments, only: [:index, :create]
+      end
+    end
+  end  
 
 end
